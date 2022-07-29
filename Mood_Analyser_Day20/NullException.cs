@@ -4,9 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mood_Analyser_Day20
+namespace MoodAnalyser_Day20
 {
-    internal class NullException
+    public class NullException
     {
+        public void shownullException(string message)
+        {
+            if (message == null)
+            {
+                throw (new MoodAnalysisException("Enterd Null Input"));
+            }
+            else if (message == "")
+            {
+                throw (new MoodAnalysisException("Empty Mood"));
+            }
+        }
     }
 }

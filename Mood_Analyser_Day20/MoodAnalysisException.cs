@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mood_Analyser_Day20
+namespace MoodAnalyser_Day20
 {
-    internal class MoodAnalysisException
+    public class MoodAnalysisException : Exception
     {
+        public MoodAnalysisException(string message) : base(message)
+        {
+
+        }
     }
 }
